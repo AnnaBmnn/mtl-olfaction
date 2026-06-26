@@ -12,6 +12,10 @@ html, body {
     background-color: #060d0d;
     font-family: 'Mona Sans', sans-serif;
     margin: 0;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
 }
 html, body, section, div {
     box-sizing: border-box;
