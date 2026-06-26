@@ -85,4 +85,36 @@
     transform: scale(0.8) translate3d(100%, 80%, 1px);
   }
 }
+@keyframes circleBigOrangeMobile {
+  0% {
+    transform:  scale(0.8) translate3d(100vw, 80vh, 1px);
+  }
+  25% {
+    transform: scale(1.2) translate3d(0vw, 60vh, 1px);
+  }
+  45% {
+    transform: scale(1.5) translate3d(-10vw, 40vh, 1px);
+  }
+  62% {
+    transform: scale(1.7) translate3d(-13vw, 30vh, 1px);
+  }
+  90% {
+    transform: scale(1.2) translate3d(40vw, 80vh, 1px);
+  }
+  100% {
+    transform: scale(0.8) translate3d(100vw, 80vh, 1px);
+  }
+}
 
+@media (max-width: 768px) {
+  .background__circle-green {
+    width: 140vw;
+    height: 140vw;
+
+  }
+  .background__circle-big-orange {
+    width: 120vw;
+    height: 120vw;
+    animation: circleBigOrangeMobile 43s ease-in-out 0s infinite;
+  }
+}
