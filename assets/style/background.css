@@ -62,25 +62,25 @@
 
 @keyframes circlePink {
   0% {
-    transform: scale(1.0) translate3d(-100%, 10%, 1px);
+    transform: scale(1.0) translate3d(-100vw, 10vh, 1px);
   }
   10% {
-    transform: scale(0.9) translate3d(0%, -10%, 1px);
+    transform: scale(0.9) translate3d(0%, -10vh, 1px);
   }
   20% {
-    transform: scale(1.5) translate3d(-50%, 20%, 1px);
+    transform: scale(1.5) translate3d(-50vw, 20vh, 1px);
   }
   50% {
-    transform: scale(1.5) translate3d(0%, 50%, 1px);
+    transform: scale(1.5) translate3d(0%, 50vh, 1px);
   }
   60% {
-    transform: scale(0.8) translate3d(20%, 70%, 1px);
+    transform: scale(0.8) translate3d(20vw, 70vh, 1px);
   }
   80% {
-    transform: scale(0.8) translate3d(-70%, -10%, 1px);
+    transform: scale(0.8) translate3d(-70vw, -10vh, 1px);
   }
   100% {
-    transform: scale(1.0) translate3d(-100%, 10%, 1px);
+    transform: scale(1.0) translate3d(-100vw, 10vh, 1px);
   }
 }
 @keyframes circleGreen {
