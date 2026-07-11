@@ -15,3 +15,27 @@ function animate(time) {
 }
 
 requestAnimationFrame(animate);
+
+/*
+* CALENDAR
+*/
+const debug = new URLSearchParams(window.location.search).has("debug");
+
+if (debug) {
+    document.querySelector('.calendar').classList.remove('hide')
+
+}
+
+const calendarButtons = document.querySelectorAll('.js-calendar-button')
+
+for(let i = 0; i < calendarButtons.length; i++){
+  calendarButtons[i].addEventListener('click',(e)=>{
+    e.preventDefault()
+    // remove class to current button
+    document.querySelector('.js-calendar-button.current').classList.remove('current')
+    calendarButtons[i].classList.add('current')
+
+    document.querySelector('.js-calendar-day.current').classList.remove('current')
+    document.querySelector(`#day${calendarButtons[i].dataset.day}`).classList.add('current')
+  })
+}

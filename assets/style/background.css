@@ -1,5 +1,5 @@
 .background {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
     background-color: #060d0d;
@@ -101,7 +101,7 @@
     transform: scale(1.2) translate3d(0%, 60%, 1px);
   }
   45% {
-    transform: scale(1.5) translate3d(-10%, 40%, 1px);
+    transform: scale(1.5) translate3d(-10%, 50%, 1px);
   }
   62% {
     transform: scale(1.5) translate3d(-13%, 15%, 1px);

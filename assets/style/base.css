@@ -17,7 +17,7 @@ html, body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
-html, body, section, div {
+html, body, section, div, header, a {
     box-sizing: border-box;
 }
 
