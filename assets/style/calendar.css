@@ -184,7 +184,8 @@
     text-decoration: none;
     position: relative;
     overflow: hidden;
-    min-height: 7vw;
+    min-height: 85px;
+    height: 7vw;
     padding: clamp(0.75rem, 1.1vw ,1.5rem);
     border-radius: clamp(0.75rem, 1.1vw ,1.5rem);
     display: flex;
