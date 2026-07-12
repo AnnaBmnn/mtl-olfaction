@@ -10,24 +10,13 @@
     /* transform: translateY(-50%); */
     aspect-ratio: 569 / 972;
     width: 30vw;
+    height: 51vw;
     overflow: hidden;
+    opacity: 0.58;
 }
 .presentation__img img {
     object-fit: contain;
     width: 100%;
-}
-@supports not (aspect-ratio: 569 / 972) {
-    .presentation__img::before {
-      float: left;
-      padding-top: 170%;
-      content: "";
-    }
-
-    .presentation__img::after {
-      display: block;
-      content: "";
-      clear: both;
-    }
 }
 
 .presentation__content {
