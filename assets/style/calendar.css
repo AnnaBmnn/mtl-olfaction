@@ -171,6 +171,27 @@
 .calendar__duration--3 { grid-column-end: span 6;}
 .calendar__duration--4 { grid-column-end: span 8;}
 
+@media (max-width: 768px) {
+
+    .calendar__container {
+        overflow: scroll;
+        position: relative;
+        width: 100vw;
+        height: 60vh;
+    }
+    .calendar__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .calendar__the-day {
+        width: 250vw;
+        top: 15vw;
+    }
+}
+
 /*
 *
 * Event
