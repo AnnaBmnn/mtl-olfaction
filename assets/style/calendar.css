@@ -172,7 +172,9 @@
 .calendar__duration--4 { grid-column-end: span 8;}
 
 @media (max-width: 768px) {
-
+    .calendar {
+        min-height: 70vh;
+    }
     .calendar__container {
         overflow: scroll;
         position: relative;
