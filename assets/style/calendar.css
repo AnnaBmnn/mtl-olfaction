@@ -10,6 +10,16 @@
     z-index: 3;
 }
 
+.calendar::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    height: 1px;
+    top: -1.3vw;
+    left: 5vw;
+    right: 5vw;
+}
+
 .calendar.hide {
     display: none;
 }
@@ -107,6 +117,16 @@
     position: relative;
     padding: 5vw 0vw ;
     margin-bottom: 5vw;
+}
+
+.calendar__timetable::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: -2vw;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .calendar__lines {
