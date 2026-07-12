@@ -1,4 +1,5 @@
 .presentation {
+    /* z-index: 1; */
     position: relative;
     margin-bottom: 7.5vw;
 }
@@ -56,7 +57,7 @@
         width: 75vw;
     }
     .presentation__img {
-        bottom: 110%;
+        bottom: 52vw;
         width: 60vw;
         height: 102vw;
     }
