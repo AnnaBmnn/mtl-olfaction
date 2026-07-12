@@ -1,7 +1,7 @@
 .splash {
     z-index: 3;
     position: relative;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -37,6 +37,9 @@
 } 
 
 @media (max-width: 768px) {
+    .splash {
+        height: 90vh;
+    }
     .splash__logo {
         align-self: flex-start;
         margin-right: 0;
