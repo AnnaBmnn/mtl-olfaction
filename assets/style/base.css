@@ -53,8 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lang-switcher__link {
-
-    font-family: "Xanh Mono", monospace;
+    font-family: "Mona Sans", monospace;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: white;
