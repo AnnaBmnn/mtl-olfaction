@@ -1,4 +1,5 @@
 .contact {
+    z-index: 3;
     height: 8.1vw;
     display: flex;
     align-items: center;
@@ -24,4 +25,10 @@
     margin-left: 1.5vw;
     width: 5.9vw;
     transform: translateY(0.25vw);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        height: 20vh;
+    }
 }
