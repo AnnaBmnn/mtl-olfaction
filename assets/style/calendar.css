@@ -194,6 +194,7 @@
 .calendar__event--start-16 {grid-column-start: 16;}
 .calendar__event--start-16_5 {grid-column-start: 17;}
 
+.calendar__duration--0_5 { grid-column-end: span 1;}
 .calendar__duration--1 { grid-column-end: span 2;}
 .calendar__duration--1_5 { grid-column-end: span 3;}
 .calendar__duration--2 { grid-column-end: span 4;}
