@@ -64,6 +64,18 @@
   background: radial-gradient(closest-side, rgba(253, 147, 182, 1), rgba(253, 147, 182, 0));
   animation: circlePink 82s ease-in-out 0s infinite ;
 }
+.background__circle-brown {
+  z-index: 1;
+  position: absolute;
+  top: 150vh;
+  left: 0;
+  width: 50vw;
+  height: 200vh;
+  border-radius: 50%;
+  background-color:  #502315;
+  background: radial-gradient(closest-side, #502315, #50231500);
+  animation: circleBrown 36s ease-in-out 0s infinite ;
+}
 
 @keyframes circlePink {
   0% {
@@ -95,6 +107,18 @@
   }
   100% {
     transform: scale(1.0) translate3d(15%, -20%, 1px);
+  }
+}
+
+@keyframes circleBrown {
+  0% {
+    transform:  scale(0.8) translate3d(-50%, 0%, 1px);
+  }
+  50% {
+    transform:  scale(1.5) translate3d(-25%, 0%, 1px);
+  }
+  100% {
+    transform:  scale(0.8) translate3d(-50%, 0%, 1px);
   }
 }
 
