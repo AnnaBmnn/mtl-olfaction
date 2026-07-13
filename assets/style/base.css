@@ -25,6 +25,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.follow {
+    position: fixed;
+    top: 1.8rem;
+    right: 5rem;
+    z-index: 10;
+    font-family: 'Mona Sans';
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    letter-spacing: 0.08em;
+    transition: opacity 0.2s;
+}
+
+.follow:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
 .lang-switcher {
     position: fixed;
     top: 1.5rem;
@@ -33,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lang-switcher__link {
+
     font-family: "Xanh Mono", monospace;
     font-size: 0.75rem;
     text-transform: uppercase;
