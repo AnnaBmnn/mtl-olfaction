@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montreal Olfaction — An event dedicated to perfume and the olfactory experience, August 28–30, 2026</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <meta property="og:image" content="assets/img/share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/style/base.css">
-    <link rel="stylesheet" href="../assets/style/background.css">
-    <link rel="stylesheet" href="../assets/style/splash.css">
+    <link rel="stylesheet" href="./assets/style/base.css">
+    <link rel="stylesheet" href="./assets/style/background.css">
+    <link rel="stylesheet" href="./assets/style/splash.css">
+    <link rel="stylesheet" href="./assets/style/presentation.css">
+    <link rel="stylesheet" href="./assets/style/calendar.css">
+    <link rel="stylesheet" href="./assets/style/sponsors.css">
+    <link rel="stylesheet" href="./assets/style/contact.css">
 </head>
 <body>
     <nav class="lang-switcher">
@@ -32,6 +40,9 @@
         </svg>
         <div class="background__circle-green"></div>
         <div class="background__circle-big-orange"></div>
+        <div class="background__circle-pink"></div>
+        <div class="background__circle-brown"></div>
+
         <section class="splash">
             <div class="splash__intro">The first edition</div>
             <h1 class="splash__title visually-hidden">Mtl Olfaction</h1>
@@ -42,6 +53,423 @@
                 <div class="splash__subtext splash__subtext--date">August 28 to 30, 2026</div>
             </div>
         </section>
+        <section class="presentation">
+            <div class="presentation__img">
+                <img src="./assets/img/presentation.gif" alt="">
+            </div>
+            <div class="presentation__content">
+                <h2 class="presentation__title">Montreal’s first edition dedicated to the world of olfaction</h2>
+                <div class="presentation__text">
+                    Discover independent perfume houses, workshops,
+                    and talks celebrating our most evocative sense.
+                    Whether you’re a perfume enthusiast, simply curious, or a
+                    creative industry professional, come explore the invisible
+                    through scent.
+                </div>
+            </div>
+        </section>
+        <section class="calendar hide">
+            <header class="calendar__header">
+                <button data-day="28" class="calendar__day js-calendar-button current">August 28</button>
+                <button data-day="29" class="calendar__day js-calendar-button">August 29</button>
+                <button data-day="30" class="calendar__day js-calendar-button">August 30</button>
+            </header>
+            <div class="calendar__container">
+                <div id="day28" class="calendar__the-day js-calendar-day current">
+                    <div class="calendar__hours grid">
+                        <div class="calendar__hour">9:00</div>
+                        <div class="calendar__hour">10:00</div>
+                        <div class="calendar__hour">11:00</div>
+                        <div class="calendar__hour">12:00</div>
+                        <div class="calendar__hour">13:00</div>
+                        <div class="calendar__hour">14:00</div>
+                        <div class="calendar__hour">15:00</div>
+                        <div class="calendar__hour">16:00</div>
+                        <div class="calendar__hour">17:00</div>
+                    </div>
+                    <div class="calendar__timetable ">
+                        <div class="calendar__lines grid">
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room A</div>
+                            <a href="#" target="_blank" class="calendar__event event event--a calendar__event--start-9 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--a calendar__event--start-11 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room B</div>
+                            <a href="#" target="_blank" class="calendar__event event event--b calendar__event--start-10 calendar__duration--3">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--b calendar__event--start-14 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room B</div>
+                            <a href="#" target="_blank" class="calendar__event event event--c calendar__event--start-11 calendar__duration--3">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--c calendar__event--start-14 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="day29" class="calendar__the-day js-calendar-day">
+                    <div class="calendar__hours grid">
+                        <div class="calendar__hour">9:00</div>
+                        <div class="calendar__hour">10:00</div>
+                        <div class="calendar__hour">11:00</div>
+                        <div class="calendar__hour">12:00</div>
+                        <div class="calendar__hour">13:00</div>
+                        <div class="calendar__hour">14:00</div>
+                        <div class="calendar__hour">15:00</div>
+                        <div class="calendar__hour">16:00</div>
+                        <div class="calendar__hour">17:00</div>
+                    </div>
+                    <div class="calendar__timetable ">
+                        <div class="calendar__lines grid">
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room A</div>
+                            <a href="#" target="_blank" class="calendar__event event event--a calendar__event--start-10 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--a calendar__event--start-16 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room B</div>
+                            <a href="#" target="_blank" class="calendar__event event event--b calendar__event--start-11 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--b calendar__event--start-14 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room B</div>
+                            <a href="#" target="_blank" class="calendar__event event event--c calendar__event--start-10 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--c calendar__event--start-14 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="day30" class="calendar__the-day js-calendar-day">
+                    <div class="calendar__hours grid">
+                        <div class="calendar__hour">9:00</div>
+                        <div class="calendar__hour">10:00</div>
+                        <div class="calendar__hour">11:00</div>
+                        <div class="calendar__hour">12:00</div>
+                        <div class="calendar__hour">13:00</div>
+                        <div class="calendar__hour">14:00</div>
+                        <div class="calendar__hour">15:00</div>
+                        <div class="calendar__hour">16:00</div>
+                        <div class="calendar__hour">17:00</div>
+                    </div>
+                    <div class="calendar__timetable ">
+                        <div class="calendar__lines grid">
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                            <div class="calendar__line"></div>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room A</div>
+                            <a href="#" target="_blank" class="calendar__event event event--a calendar__event--start-10 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--a calendar__event--start-15 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room B</div>
+                            <a href="#" target="_blank" class="calendar__event event event--b calendar__event--start-9 calendar__duration--3">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--b calendar__event--start-12 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="calendar__timetable-row grid">
+                            <div class="calendar__place">Room B</div>
+                            <a href="#" target="_blank" class="calendar__event event event--c calendar__event--start-10 calendar__duration--2">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="calendar__event event event--c calendar__event--start-16 calendar__duration--1">
+                                <div class="event__title">
+                                    When fashion houses <br> turn to perfume
+                                </div>
+                                <div class="event__footer">
+                                    <div class="event__organizer">Trafic Olfactif</div>
+                                    <div class="event__duration">3h</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors">
+            <div class="sponsors__row">
+                <div class="sponsors__content">
+                    <h2 class="sponsors__title">Our partners</h2>
+                    <p class="sponsors__text">We warmly thank our partners, whose collaboration and generosity help make MTL Olfaction an ever livelier event.</p>
+                </div>
+                <div class="sponsors__lines">
+                    <div class="sponsors__line">
+                        <a href="https://mode.uqam.ca/" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">UQAM école supérieur de mode</span>
+                            <img src="./assets/img/sponsors/ESM.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sponsors__line">
+                        <a href="https://www.annabaumann.fr/"  class="sponsors__link" target="_blank">
+                            <div class="sponsors__label">Web development by</div>
+                            <div class="sponsors__name">Anna Baumann</div>
+                        </a>
+                        <a href="https://contrebande.co/en-ca" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">Contre bande</span>
+                            <img src="./assets/img/sponsors/contrebande.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sponsors__row sponsors__row--border">
+                <div class="sponsors__lines ">
+                    <div class="sponsors__line sponsors__line--no-border">
+                        <a href="" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">Saint-Henri</span>
+                            <img src="./assets/img/sponsors/csh-logo-white.png" alt="">
+                        </a>
+                        <a href="https://sainthenri.ca/" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">camellia</span>
+                            <img src="./assets/img/sponsors/camellia.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sponsors__line">
+                        <a href="https://hparfums.com/fr" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">H parfum</span>
+                            <img src="./assets/img/sponsors/hparfums-logo-white.png" alt="">
+                        </a>
+                        <a href="https://30ml.ca/" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">30 ml</span>
+                            <img src="./assets/img/sponsors/30ml.png" alt="">
+                        </a>
+                        <a href="https://lamaisongenerale.ca/collections/parfums" class="sponsors__link" target="_blank">
+                            <span class="visually-hidden">La maison générale</span>
+                            <img src="./assets/img/sponsors/maison_generale.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="sponsors__content sponsors__content--right">
+                    <div class="sponsors__img-container">
+                        <img src="./assets/img/sponsor.gif" alt="" class="sponsors__img">
+                    </div>
+                </div>
+            </div>
+            <div class="sponsors__row sponsors__row--border">
+                <div class="sponsors__lines sponsors__lines--alot">
+                    <a href="https://www.instagram.com/lesparfumsr/" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">les parfums r</span>
+                        <img src="./assets/img/sponsors/lesparfumsr.png" alt="">
+                    </a> 
+                    <a href="https://www.lvnea.ca/fr" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Lunea</span>
+                        <img src="./assets/img/sponsors/LVNEA.png" alt="">
+                    </a> 
+                    <a href="https://monsillage.com/" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Mon sillage</span>
+                        <img src="./assets/img/sponsors/monsillage-logo-white.png" alt="">
+                    </a> 
+                    <a href="https://www.traficolfactif.com/" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">traffic olfactif</span>
+                        <img src="./assets/img/sponsors/TraficOlfactif_Logo_white.png" alt="">
+                    </a> 
+                    <a href="https://chimiescent.com/shop" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Chimie</span>
+                        <img src="./assets/img/sponsors/chimie-1-white.png" alt="">
+                    </a> 
+                    <a href="https://miskeoparfums.com/" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Miskeo</span>
+                        <img src="./assets/img/sponsors/miskeo-logo-white.png" alt="">
+                    </a> 
+                    <a href="https://alexandrabach.com/en" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">la grange du parfumeur</span>
+                        <img src="./assets/img/sponsors/lgp-logo-white.png" alt="">
+                    </a> 
+                    <a href="" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Theodore white</span>
+                        <img src="./assets/img/sponsors/theodore-white.png" alt="">
+                    </a> 
+                    <a href="https://www.videsanges.com/fr" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Parfum les vides anges</span>
+                        <img src="./assets/img/sponsors/LVA-logo-2024-Outlines-white.png" alt="">
+                    </a> 
+                    <a href="https://www.facebook.com/ScentientSessions/" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">scientient sessions</span>
+                        <img src="./assets/img/sponsors/ss-logo-white.png" alt="">
+                    </a> 
+                    <a href="https://www.instagram.com/simonntooley/" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Simon Tooley</span>
+                        <img src="./assets/img/sponsors/Simon Tooley.png" alt="">
+                    </a> 
+                    <a href="https://www.instagram.com/monsieurlegrandduc/?hl=fr" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Stéphane Leduc</span>
+                        <img src="./assets/img/sponsors/Stéphane Leduc.png" alt="">
+                    </a> 
+                    <a href="https://hebertperfumes.com/fr" class="sponsors__link" target="_blank">
+                        <span class="visually-hidden">Hebert haute parfumerie</span>
+                        <img src="./assets/img/sponsors/LOGO_HB_HAUTE_BLACK_3.5_x_3.5_cm_white.png" alt="">
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <footer class="contact">
+            <a href="mailto:lesparfumsr@gmail.com" class="contact__link" href="">
+                <span>
+                    Contact us
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="115" height="20" viewBox="0 0 115 20" fill="none">
+                    <line y1="9.87842" x2="114" y2="9.87842" stroke="black"/>
+                    <path d="M103 19.3784L114 9.87842L103 0.378417" stroke="black"/>
+                </svg>
+            </a>
+        </footer>
     </div>
     <script type="text/javascript" src="../assets/script/script.js"></script>
 </body>
