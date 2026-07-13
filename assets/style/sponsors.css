@@ -109,7 +109,7 @@
     font-family: 'Mona Sans';
     margin-top: 0.4vw;
     font-weight: 700;
-    font-size: clamp(1rem ,1.25rem, 1.875rem);
+    font-size: clamp(0.8rem ,0.9vw, 1.875rem);
     leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
@@ -139,6 +139,6 @@
     }
     .sponsors__link img {
         max-width: 40vw;
-        max-height: 5vw;
+        max-height: 7vw;
     }
 }
