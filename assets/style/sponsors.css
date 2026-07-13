@@ -1,6 +1,6 @@
 .sponsors {
     position: relative;
-    z-index: 3;
+    z-index: 10;
     padding: 5vw;
 }
 .sponsors__content {
@@ -74,8 +74,8 @@
 }
 
 .sponsors__link img {
-    max-width: 20vw;
-    max-height: 4vw;
+    max-width: 15vw;
+    max-height: 3vw;
 }
 
 .sponsors__img-container {
@@ -123,6 +123,13 @@
     }
     .sponsors__content {
         width: 80%;
+    }
+    .sponsors__lines--alot {    
+        padding: 3.5vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10vw;
     }
     .sponsors__content--right {
         height: 60vw;
