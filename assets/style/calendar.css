@@ -332,6 +332,7 @@
 
 .event--soiree {
     position: absolute;
+    z-index: 4;
     right: 8px;
     top: calc(5vw + 8px);
     bottom: calc(5vw + 8px);
