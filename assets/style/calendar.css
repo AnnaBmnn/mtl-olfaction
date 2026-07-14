@@ -111,6 +111,11 @@
     display: grid;
     grid-template-columns: repeat(18, minmax(0, 1fr));
     gap: 8px;
+    padding: 0 8px;
+}
+
+.grid--pb {
+    padding-right: 1px;
 }
 
 .calendar__timetable {
