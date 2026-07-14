@@ -5,7 +5,7 @@
 */
 
 .calendar {
-    min-height: 90vh;
+    min-height: 130vh;
     position: relative;
     z-index: 3;
 }
@@ -117,6 +117,7 @@
     position: relative;
     padding: 5vw 0vw ;
     margin-bottom: 5vw;
+    min-height: 70vh;
 }
 
 .calendar__timetable::after {
@@ -193,6 +194,7 @@
 .calendar__event--start-15_5 {grid-column-start: 15;}
 .calendar__event--start-16 {grid-column-start: 16;}
 .calendar__event--start-16_5 {grid-column-start: 17;}
+.calendar__event--start-17 {grid-column-start: 18;}
 
 .calendar__duration--0_5 { grid-column-end: span 1;}
 .calendar__duration--1 { grid-column-end: span 2;}
@@ -211,7 +213,7 @@
         overflow: scroll;
         position: relative;
         width: 100vw;
-        height: 60vh;
+        height: 100vh;
     }
     .calendar__header {
         position: absolute;
@@ -281,6 +283,12 @@
 .event--c:after {
     background: linear-gradient(-90deg, #6da7a0 25.28%, #6da7a000 135.46%);
 }
+.event--d {
+    background: linear-gradient(337.06deg, #D04C23 -21.68%, #511A37 40.77%);
+}
+/* .event--d:after {
+    background: linear-gradient(-90deg, #6da7a0 25.28%, #6da7a000 135.46%);
+} */
 
 
 .event__title {
@@ -315,5 +323,27 @@
     vertical-align: middle;
     margin-top: clamp(16px, 1.8vw, 36px);
     padding-top: clamp(6px, 0.35vw, 14px);
+}
 
+.event--soiree {
+    position: absolute;
+    right: 0;
+    top: calc(5vw + 8px);
+    bottom: calc(5vw + 8px);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    height: unset;
+    width: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event--soiree .event__title {
+    width: unset;
+    position: relative;
+    left: unset;
+    right: unset;
+    top: unset;
 }
