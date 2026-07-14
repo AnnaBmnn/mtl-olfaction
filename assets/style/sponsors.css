@@ -44,11 +44,11 @@
 }
 
 .sponsors__lines--alot {    
-    padding: 3.5vw;
+    padding: 1.5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4.5vw;
+    gap: 2.5vw;
 }
 
 .sponsors__lines--alot .sponsors__link {    
@@ -75,7 +75,11 @@
 
 .sponsors__link img {
     max-width: 15vw;
-    max-height: 3vw;
+    max-height: 10vw;
+}
+
+.sponsors__lines--alot  .sponsors__link img{    
+    max-height: 7vw;
 }
 
 .sponsors__img-container {
