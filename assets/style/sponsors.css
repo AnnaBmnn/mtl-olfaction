@@ -26,7 +26,7 @@
     font-style: regular;
     font-size: clamp(1.1rem ,1.45vw, 2.125rem);
     leading-trim: NONE;
-    line-height: 100%;
+    line-height: 130%;
     letter-spacing: 0%;
 }
 
