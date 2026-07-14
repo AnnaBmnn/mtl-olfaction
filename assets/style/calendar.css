@@ -267,6 +267,9 @@
 .calendar__duration--1:after {
     display: block;
 }
+.calendar__duration--0_5:after {
+    display: block;
+}
 
 .event--a {
     background: linear-gradient(266.13deg, #D04C23 25.28%, #511A37 135.46%);
