@@ -1,4 +1,5 @@
 const noise = document.getElementById("noise");
+const pannels = document.querySelectorAll(".js-pannel")
 
 let seed = 1;
 let lastTime = 0;
@@ -37,5 +38,16 @@ for(let i = 0; i < calendarButtons.length; i++){
 
     document.querySelector('.js-calendar-day.current').classList.remove('current')
     document.querySelector(`#day${calendarButtons[i].dataset.day}`).classList.add('current')
+  })
+}
+
+/*
+* Panel
+*/
+
+
+for(let i = 0; i < pannels.length; i++){
+  pannels[i].querySelector('.js-pannel-close').addEventListener('click', ()=> {
+    pannels[i].classList.add('hide')
   })
 }

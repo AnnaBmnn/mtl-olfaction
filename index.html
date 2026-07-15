@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/style/calendar.css">
     <link rel="stylesheet" href="./assets/style/sponsors.css">
     <link rel="stylesheet" href="./assets/style/contact.css">
+    <link rel="stylesheet" href="./assets/style/pannel.css">
 </head>
 <body>
     <a class="follow" target="_blank" href="https://www.instagram.com/mtlolfaction/">Suivez-nous</a>
@@ -44,7 +45,71 @@
         <div class="background__circle-big-orange"></div>
         <div class="background__circle-pink"></div>
         <div class="background__circle-brown"></div>
-    
+        <section class="pannel js-pannel hide">
+            <button class="pannel__close js-pannel-close">
+                <div class="visually-hidden">close pannel</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="145" height="145" viewBox="0 0 145 145" fill="none">
+                    <line x1="35.3554" y1="107.48" x2="107.48" y2="35.3553" stroke="white" stroke-width="2"/>
+                    <line x1="107.48" y1="108.894" x2="35.3555" y2="36.7696" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
+            <div class="pannel__scroll">
+                <header class="pannel__header">
+                    <div class="pannel__tags">
+                        <span class="pannel__tag">salle a</span>
+                        <span class="pannel__tag">2h</span>
+                    </div>
+                </header>
+                <h3 class="pannel__big-title">Quand les couturiers se mettent au parfum</h3>
+                <div class="pannel__row">
+                    <div class="pannel__organizer">par <b>Traffic Olfactif</b></div>
+                    <div class="pannel__places">15 places</div>
+                    <div class="pannel__hours">9:00 à 11:00</div>
+                </div>
+                <div class="pannel__row pannel__place">
+                    <div>
+                        <b>école supérieur de la mode</b>
+                    </div>
+                    <div>280 E rue Sainte-Catherine E, Montreal</div>
+                </div>
+                <div class="pannel__content">
+                    <h4 class="pannel__title">L'évènement</h4>
+                    <div class="pannel__text">
+                        Voyageuse dans l’âme, curieuse du monde et passionnée par les 
+                        rencontres, elle s’émerveille de tout ce qui raconte une 
+                        histoire et révèle une émotion. Au fil de ses explorations, 
+                        l’univers de la parfumerie s’est imposé comme une évidence, 
+                        devenant bien plus qu’une passion : une véritable quête, 
+                        son graal. Entre curiosité, sensibilité et intuition, 
+                        elle cultive l’art de relier les êtres, les connaissances 
+                        et les odeurs pour créer des expériences profondément 
+                        humaines, mémorables et pleines d’émerveillement.
+                    </div>
+                    <h4 class="pannel__title">Biographie</h4>
+                    <div class="pannel__text">
+                        Voyageuse dans l’âme, curieuse du monde et passionnée par les 
+                        rencontres, elle s’émerveille de tout ce qui raconte une 
+                        histoire et révèle une émotion. Au fil de ses explorations, 
+                        l’univers de la parfumerie s’est imposé comme une évidence, 
+                        devenant bien plus qu’une passion : une véritable quête, 
+                        son graal. Entre curiosité, sensibilité et intuition, 
+                        elle cultive l’art de relier les êtres, les connaissances 
+                        et les odeurs pour créer des expériences profondément 
+                        humaines, mémorables et pleines d’émerveillement.
+                    </div>
+                </div>
+            </div>
+            <a href="" class="pannel__link">
+                <div class="pannel__link-left">
+                    <span class="pannel__link-box">Gratuit</span>
+                    <span>Réservez votre place</span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="40" viewBox="0 0 67 40" fill="none">
+                    <line x1="-8.74228e-08" y1="19.168" x2="65" y2="19.168" stroke="#1B1B1B" stroke-width="2"/>
+                    <path d="M44.2857 38.5954L65 19.6669L44.2857 0.73828" stroke="#1B1B1B" stroke-width="2"/>
+                </svg>
+            </a>
+        </section>
         <section class="splash">
             <div class="splash__intro">La première édition</div>
             <h1 class="splash__title visually-hidden">Mtl Olfaction</h1>
@@ -70,6 +135,7 @@
                 </div>
             </div>
         </section>
+
         <section class="calendar ">
             <header class="calendar__header">
                 <button data-day="28" class="calendar__day js-calendar-button ">28 aout</button>
