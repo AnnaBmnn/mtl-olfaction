@@ -46,8 +46,8 @@ for(let i = 0; i < calendarButtons.length; i++){
 */
 
 
-for(let i = 0; i < pannels.length; i++){
-  pannels[i].querySelector('.js-pannel-close').addEventListener('click', ()=> {
-    pannels[i].classList.add('hide')
-  })
-}
+// for(let i = 0; i < pannels.length; i++){
+//   pannels[i].querySelector('.js-pannel-close').addEventListener('click', ()=> {
+//     pannels[i].classList.add('hide')
+//   })
+// }
