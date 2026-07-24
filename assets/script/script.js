@@ -1,5 +1,6 @@
 const noise = document.getElementById("noise");
 const pannels = document.querySelectorAll(".js-pannel")
+const events = document.querySelectorAll(".event")
 
 let seed = 1;
 let lastTime = 0;
@@ -45,9 +46,22 @@ for(let i = 0; i < calendarButtons.length; i++){
 * Panel
 */
 
+if (debug) {
+  console.log('debug')
+  console.log(pannels)
+  for(let i = 0; i < pannels.length; i++){
+    pannels[i].querySelector('.js-pannel-close').addEventListener('click', (e)=> {
+      e.preventDefault()
+      pannels[i].classList.add('hide')
+    })
+  }
 
-// for(let i = 0; i < pannels.length; i++){
-//   pannels[i].querySelector('.js-pannel-close').addEventListener('click', ()=> {
-//     pannels[i].classList.add('hide')
-//   })
-// }
+  for(let i = 0; i < events.length; i++){
+    console.log(events)
+    events[i].addEventListener('click', (e)=> {
+      console.log('click')
+      e.preventDefault()
+      pannels[0].classList.remove('hide')
+    })
+  }
+}
